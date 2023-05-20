@@ -14,7 +14,7 @@ const Navbar = () => {
             <div className="logo">
                 <h3>Digital NewsPaper</h3>
             </div>
-            <div className={mobile_menu?"menu-link mobile-menu-link":"menu-link"}>
+            <div className={mobile_menu?"mobile-menu-link menu-link":"menu-link"}>
                 <ul type="none">
                     <li><a href="/">Home</a></li>
                     <li><a href="/">About</a></li>
@@ -29,8 +29,11 @@ const Navbar = () => {
                     <li><a href="/">In</a></li>
                 </ul>
             </div>
-            <div className="hamburger">
-                <button onClick={change_state_of_menu}>Menu</button>
+            <div className="hamburger" onClick={change_state_of_menu}>
+                {/* <button onClick={change_state_of_menu}>Menu</button> */}
+                <div className="icon" id="a"></div>
+                <div className="icon" id="b"></div>
+                <div className="icon" id="c"></div>
             </div>
         </nav>
         <div className="main_section">
