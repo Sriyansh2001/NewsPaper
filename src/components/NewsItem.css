@@ -1,0 +1,12 @@
+.main_box {
+    display: inline-block;
+    width: 32%;
+    margin: 5px;
+    border: 3px solid black;
+    /* padding: 100px; */
+}
+
+.image {
+    height: 300px;
+    width: 100%;
+}

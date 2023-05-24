@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    color: aliceblue;
 }
 
 .main-nav {
@@ -104,7 +105,7 @@ a {
         position: relative;
         grid-column: 1/4;
         grid-row: 2/3;
-        background-color: aliceblue;
+        background-color: peru;
         display: grid;
         height: 130px;
         /* transition: all 2s linear; */
