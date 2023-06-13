@@ -1,6 +1,7 @@
 .Row_heading {
     text-align: center;
     margin: 20px;
+    border-bottom: 1px solid black;
 }
 
 .sub_div{
@@ -23,6 +24,6 @@
 }
 
 .btn:hover {
-    background-color: bisque;
+    background-color: rgb(62, 57, 52);
     cursor: pointer;
 }

@@ -22,7 +22,7 @@ a {
     grid-column:2/3;
     justify-content: start;
     align-items: center;
-    color: rgb(86, 154, 120);
+    color: white;
 }
 
 .menu-link {
@@ -78,7 +78,7 @@ a {
 .icon  {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: white;
   margin: 3px 0;
 }
 
@@ -88,6 +88,16 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+@keyframes taadaa { 
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
 
 @media (max-width:1200px) {
     .menu-link {
@@ -114,23 +124,33 @@ a {
         height: 0;
     }
 
-    .mobile-menu-link {
+    .menu-link {
         position: relative;
         grid-column: 1/4;
         grid-row: 2/3;
-        background-color: peru;
-        display: grid;
+        transition: all 1s linear;
+        background-color: rgb(22, 15, 15);
+        opacity: 0.8;
+        display: flex;
+        /* text-align: center; */
+        /* justify-content: center; */
         height: 300px;
-        /* transition: all 2s linear; */
     }
     
-    .mobile-menu-link ul{
+    .links {
+        position: relative;
+        justify-content: left;
+        text-align: left;
+        transition: all 1s linear;
+    }
+
+    .menu-link ul{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .mobile-menu-link ul li {
+    .menu-link ul li {
         padding: 5px;
     }
 
