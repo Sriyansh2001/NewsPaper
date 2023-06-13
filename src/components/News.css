@@ -1,3 +1,28 @@
 .Row_heading {
     text-align: center;
+    margin: 20px;
+}
+
+.sub_div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}   
+
+.page_change {
+    width: 100%;    
+    padding: 25px;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-around;
+}
+.btn {
+    padding: 10px 20px 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: aqua;
+    cursor: pointer;
 }

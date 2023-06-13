@@ -1,12 +1,31 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .main_box {
-    display: inline-block;
-    width: 32%;
-    margin: 5px;
+    /* display: flex; */   
+    float: right;
+    width: 80%;
+    margin: 5px 5px 25px 5px ;
     border: 3px solid black;
+    border-radius: 10px;
     /* padding: 100px; */
 }
 
 .image {
-    height: 300px;
+    height: 250px;
     width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.btn {
+    float: right;
+    margin: 3px 10px 10px 0px;
+    border: 0.5px solid black;
+}
+
+.read_more {
+    color: black;
 }

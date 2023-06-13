@@ -29,9 +29,13 @@ class Navbar extends Component {
                 <div className={this.state.mobile_menu?"mobile-menu-link menu-link":"menu-link"}>
                     <ul type="none">
                         <li><a href="/">Home</a></li>
-                        <li><a href="/">About</a></li>
-                        <li><a href="/">Service</a></li>
-                        <li><a href="/">Contact</a></li>
+                        <li><a href="/">Business</a></li>
+                        <li><a href="/">Entertainment</a></li>
+                        <li><a href="/">General</a></li>
+                        <li><a href="/">Health</a></li>
+                        <li><a href="/">Science</a></li>
+                        <li><a href="/">Sports</a></li>
+                        <li><a href="/">Technology</a></li>
                     </ul>
                 </div>
                 <div className="social-media">
