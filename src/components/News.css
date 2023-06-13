@@ -5,14 +5,14 @@
 
 .sub_div{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
 }   
 
 .page_change {
     width: 100%;    
-    padding: 25px;
-    background-color: cornflowerblue;
+    padding: 15px;
+    background-color:  rgb(35, 28, 28);
     display: flex;
     justify-content: space-around;
 }
@@ -23,6 +23,6 @@
 }
 
 .btn:hover {
-    background-color: aqua;
+    background-color: bisque;
     cursor: pointer;
 }

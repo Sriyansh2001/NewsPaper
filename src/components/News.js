@@ -61,7 +61,7 @@ export default class News extends Component {
   function show_description(description) {
     var result = "";
     var val="";
-    for(let i=0 ; i<100 ; ++i) {
+    for(let i=0 ; i<250 ; ++i) {
       if(description.length<=i) {
         result+=' ';
       }
@@ -79,12 +79,12 @@ export default class News extends Component {
   return (
     <>
       <div className='main_body'></div>
-        <div className='Row_heading'><h2>Top Tech News</h2></div>
+        <div className='Row_heading'><h2>{this.props.news_type}</h2></div>
         {this.state.loading && <Spinner/>}
         <div className='sub_div'>
             {this.state.articles.map(elem =>{
             return  <span  key={elem.title}> 
-                      <NewsItem title={elem.title?elem.title.slice(0,40)+"...":"No Title Available"} description={elem.description?show_description(elem.description):""} img_url={elem.urlToImage?elem.urlToImage:""} read_more={elem.url}/> 
+                      <NewsItem title={elem.title?elem.title:"No Title Available"} description={elem.description?show_description(elem.description):""} img_url={elem.urlToImage?elem.urlToImage:""} read_more={elem.url}/> 
                     </span>
             })}
         </div>

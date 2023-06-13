@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <>
         <Navbar/>
-        <News pagesize="9" category="general" country="in"/>
+        <News pagesize="9" category="general" country="in" news_type="Top News"/>
       </>
     )
   }
